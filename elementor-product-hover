@@ -1,0 +1,30 @@
+selector{
+    height: 650px;
+    display: flex;
+}
+
+/*Show/Hide CSS*/
+selector .hide-atr{
+    display: none;
+}
+selector:hover .hide-atr{
+    display: block;
+}
+
+/*Image Transform*/
+selector img{
+    transition: ease .5s;
+}
+selector:hover img{
+    transform: translate(-20px, -40px) rotate(-25deg) scale(1.1);
+}
+
+/*Mobile Hover*/
+@media (max-width: 767px){
+ selector:hover img{
+    transform: translate(-20px, 0px) rotate(-10deg) scale(1);
+}
+selector{
+    margin: 50px 10px;
+}
+}
